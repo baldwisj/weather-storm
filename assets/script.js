@@ -3,7 +3,7 @@ const searchBox = $('#searchBox');
 const searchBtn = $('#searchBtn');
 const currentWeatherTitle = $('#currentWeatherTitle');
 const todayWeather = $('today-weather');
-const todayIcon = $('today-icon');
+
 
 let cityName;
 let latitude;
@@ -51,10 +51,15 @@ $(document).ready(function () {
                         let todayTemp = data2.main.temp;
                         let todayWind = data2.wind.speed;
                         let todayHumid = data2.main.humidity;
+                        
                         let todayIcon = data2.weather[0].icon;
                         let todayiconUrl = `https://openweathermap.org/img/wn/${todayIcon}@4x.png`;
 
-                        todayIcon.src = todayiconUrl
+                        $('#current-icon').attr('src', todayiconUrl);
+                        $('#currentTemp').text('Current Temperature: ' + (Math.round(todayTemp))+'°F');
+                        $('#currentWind').text('Wind Speed: ' +(Math.round(todayWind))+' mph');
+                        $('#currentHumid').text('Humidity: ' + (Math.round(todayHumid))+'%');
+                        
                         
                     })
                 fetch(fiveDayApi)
@@ -68,9 +73,16 @@ $(document).ready(function () {
                         let day1Temp = dayArray[0].main.temp;
                         let day1Wind = dayArray[0].wind.speed;
                         let day1Humid = dayArray[0].main.humidity;
+                        
                         let day1Icon = dayArray[0].weather[0].icon;
                         let day1IconUrl = `https://openweathermap.org/img/wn/${day1Icon}@4x.png`;
                         console.log(day1Temp, day1Wind, day1Humid, day1Icon)
+
+                        $('#day1-icon').attr('src', day1IconUrl);
+                        $('#day1Temp').text('Current Temperature: ' + (Math.round(day1Temp))+'°F');
+                        $('#day1Wind').text('Wind Speed: ' +(Math.round(day1Wind))+' mph');
+                        $('#day1Humid').text('Humidity: ' + (Math.round(day1Humid))+'%');
+                        
 
                         let day2Temp = dayArray[1].main.temp;
                         let day2Wind = dayArray[1].wind.speed;
@@ -78,11 +90,22 @@ $(document).ready(function () {
                         let day2Icon = dayArray[1].weather[0].icon;
                         let day2IconUrl = `https://openweathermap.org/img/wn/${day2Icon}@4x.png`;
 
+                        $('#day2-icon').attr('src', day2IconUrl);
+                        $('#day2Temp').text('Current Temperature: ' + (Math.round(day2Temp))+'°F');
+                        $('#day2Wind').text('Wind Speed: ' +(Math.round(day2Wind))+' mph');
+                        $('#day2Humid').text('Humidity: ' + (Math.round(day2Humid))+'%');
+
                         let day3Temp = dayArray[2].main.temp;
                         let day3Wind = dayArray[2].wind.speed;
                         let day3Humid = dayArray[2].main.humidity;
                         let day3Icon = dayArray[2].weather[0].icon;
                         let day3IconUrl = `https://openweathermap.org/img/wn/${day3Icon}@4x.png`;
+
+                        $('#day3-icon').attr('src', day3IconUrl);
+                        $('#day3Temp').text('Current Temperature: ' + (Math.round(day3Temp))+'°F');
+                        $('#day3Wind').text('Wind Speed: ' +(Math.round(day3Wind))+' mph');
+                        $('#day3Humid').text('Humidity: ' + (Math.round(day3Humid))+'%');
+
 
                         let day4Temp = dayArray[3].main.temp;
                         let day4Wind = dayArray[3].wind.speed;
@@ -90,11 +113,22 @@ $(document).ready(function () {
                         let day4Icon = dayArray[3].weather[0].icon;
                         let day4IconUrl = `https://openweathermap.org/img/wn/${day4Icon}@4x.png`;
 
+                        $('#day4-icon').attr('src', day4IconUrl);
+                        $('#day4Temp').text('Current Temperature: ' + (Math.round(day4Temp))+'°F');
+                        $('#day4Wind').text('Wind Speed: ' +(Math.round(day4Wind))+' mph');
+                        $('#day4Humid').text('Humidity: ' + (Math.round(day4Humid))+'%');
+
+
                         let day5Temp = dayArray[4].main.temp;
                         let day5Wind = dayArray[4].wind.speed;
                         let day5Humid = dayArray[4].main.humidity;
                         let day5Icon = dayArray[4].weather[0].icon;
                         let day5IconUrl = `https://openweathermap.org/img/wn/${day5Icon}@4x.png`;
+
+                        $('#day5-icon').attr('src', day5IconUrl);
+                        $('#day5Temp').text('Current Temperature: ' + (Math.round(day5Temp))+'°F');
+                        $('#day5Wind').text('Wind Speed: ' +(Math.round(day5Wind))+' mph');
+                        $('#day5Humid').text('Humidity: ' + (Math.round(day5Humid))+'%');
 
 
                     })

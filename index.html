@@ -13,34 +13,81 @@
         <h1 class="inline-block">Weather Storm</h1>
     </header>
     <main class="row">
-        <section class="col w-50 search-block">
+        <section class="col search-block">
             <div class="searchBar">
                 <h2>Search Your Location</h2>
                 <input type="text" id="searchBox" name="search-box" placeholder="e.g. Boston" />
             </div>
-            
+
             <div class="searchBtn-container">
                 <button id="searchBtn" type="submit" class="btn">Search</button>
             </div>
 
         </section>
 
-        <section class="col w-50 display-block">
+        <section class="col-8 display-block">
             <div class="row">
-                <div class="">
+                <div class="currentWeatherBlock col">
                     <h2 id="currentWeatherTitle"></h2>
-                    <section id="today-weather">
-                        <img src="" id="today-icon"/>
-                        <p id="todayTemp"></p>
-                        <p id="todayWind"></p>
-                        <p id="todayHumid"></p>
+                    <section id="curent-weather">
+                        <img id="current-icon" />
+                        <p id="currentTemp"></p>
+                        <p id="currentWind"></p>
+                        <p id="currentHumid"></p>
                     </section>
-
                 </div>
-                <div class="fiveday-weather row">
 
+                <div class="weekweatherblock row w-100">
+                    <div id="day1" class="col">
+                        <h3 id="day1Title"></h3>
+                        <section id="day1-weather">
+                            <img id="day1-icon" />
+                            <p id="day1Temp"></p>
+                            <p id="day1Wind"></p>
+                            <p id="day1Humid"></p>
+                        </section>
+                    </div>
+                    <div id="day2" class="col">
+                        <h3 id="day2Title"></h3>
+                        <section id="day2-weather">
+                            <img id="day2-icon" />
+                            <p id="day2Temp"></p>
+                            <p id="day2Wind"></p>
+                            <p id="day2Humid"></p>
+                        </section>
+                    </div>
+                    <div id="day3" class="col">
+                        <h3 id="day3Title"></h3>
+                        <section id="day3-weather">
+                            <img id="day3-icon" />
+                            <p id="day3Temp"></p>
+                            <p id="day3Wind"></p>
+                            <p id="day3Humid"></p>
+                        </section>
+                        <div id="day4" class="col">
+                            <h3 id="day4Title"></h3>
+                            <section id="day4-weather">
+                                <img id="day4-icon" />
+                                <h4 id="day4dec"></h4>
+                                <p id="day4Temp"></p>
+                                <p id="day4Wind"></p>
+                                <p id="day4Humid"></p>
+                            </section>
+                        </div>
+                        <div id="day5" class="col">
+                            <h3 id="day5Title"></h3>
+                            <section id="day5-weather">
+                                <img id="day5-icon" />
+                                <h4 id="day5dec"></h4>
+                                <p id="day5Temp"></p>
+                                <p id="day5Wind"></p>
+                                <p id="day5Humid"></p>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
+        
 
         </section>
 
