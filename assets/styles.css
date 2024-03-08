@@ -1,0 +1,62 @@
+body {
+    background: #0da4cf;
+}
+header {
+    height: 65px;
+    
+}
+
+header h1 {
+    padding: 5px;
+    color: white;
+    background: black;
+    border-bottom: 5px solid orange;;
+}
+
+main {
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+.search-block {
+    margin-left: 20px;
+    
+}
+#search-history {
+    padding: 5px;
+    margin-left: 10px;
+}
+.histBtn {
+    color: black;
+    background: orange;
+}
+.searched {
+
+}
+.currentWeatherBlock {
+    width: 50%;
+    background: white;
+    text-align: center;
+    border: 5px solid orange;
+    margin: 0 20px;
+}
+.currentWeatherBlock h2{
+color: blue;
+font-size: 50px;
+}
+.weekweatherblock {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    padding-top:10px;
+}
+.cards {
+    flex: 1;
+    border: 2px solid black;
+    margin: 0 10px;
+    padding-top:10px;
+    justify-content: center;
+    text-align: center;
+    background: orange;
+}

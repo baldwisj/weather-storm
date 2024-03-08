@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="h-50">
         <h1 class="inline-block">Weather Storm</h1>
     </header>
     <main class="row">
@@ -20,13 +20,16 @@
             </div>
 
             <div class="searchBtn-container">
-                <button id="searchBtn" type="submit" class="btn">Search</button>
+                <button id="searchBtn" type="submit" class="w-50">Search</button>
+            </div>
+            <div class="row w-50" id="search-history">
+
             </div>
 
         </section>
 
-        <section class="col-8 display-block">
-            <div class="row">
+        <section class="col-10 ">
+            <div class="row searched ">
                 <div class="currentWeatherBlock col">
                     <h2 id="currentWeatherTitle"></h2>
                     <section id="curent-weather">
@@ -36,35 +39,39 @@
                         <p id="currentHumid"></p>
                     </section>
                 </div>
+                <section class="container">
+                    <div class="weekweatherblock">
 
-                <div class="weekweatherblock row w-100">
-                    <div id="day1" class="col">
-                        <h3 id="day1Title"></h3>
-                        <section id="day1-weather">
-                            <img id="day1-icon" />
-                            <p id="day1Temp"></p>
-                            <p id="day1Wind"></p>
-                            <p id="day1Humid"></p>
-                        </section>
-                    </div>
-                    <div id="day2" class="col">
-                        <h3 id="day2Title"></h3>
-                        <section id="day2-weather">
-                            <img id="day2-icon" />
-                            <p id="day2Temp"></p>
-                            <p id="day2Wind"></p>
-                            <p id="day2Humid"></p>
-                        </section>
-                    </div>
-                    <div id="day3" class="col">
-                        <h3 id="day3Title"></h3>
-                        <section id="day3-weather">
-                            <img id="day3-icon" />
-                            <p id="day3Temp"></p>
-                            <p id="day3Wind"></p>
-                            <p id="day3Humid"></p>
-                        </section>
-                        <div id="day4" class="col">
+                        <div id="day1" class=" cards">
+                            <h3 id="day1Title"></h3>
+                            <section id="day1-weather">
+                                <img id="day1-icon" />
+                                <p id="day1Temp"></p>
+                                <p id="day1Wind"></p>
+                                <p id="day1Humid"></p>
+                            </section>
+                        </div>
+
+                        <div id="day2" class=" cards">
+                            <h3 id="day2Title"></h3>
+                            <section id="day2-weather">
+                                <img id="day2-icon" />
+                                <p id="day2Temp"></p>
+                                <p id="day2Wind"></p>
+                                <p id="day2Humid"></p>
+                            </section>
+                        </div>
+
+                        <div id="day3" class=" cards">
+                            <h3 id="day3Title"></h3>
+                            <section id="day3-weather">
+                                <img id="day3-icon" />
+                                <p id="day3Temp"></p>
+                                <p id="day3Wind"></p>
+                                <p id="day3Humid"></p>
+                            </section>
+                        </div>
+                        <div id="day4" class=" cards">
                             <h3 id="day4Title"></h3>
                             <section id="day4-weather">
                                 <img id="day4-icon" />
@@ -74,7 +81,8 @@
                                 <p id="day4Humid"></p>
                             </section>
                         </div>
-                        <div id="day5" class="col">
+
+                        <div id="day5" class=" cards">
                             <h3 id="day5Title"></h3>
                             <section id="day5-weather">
                                 <img id="day5-icon" />
@@ -84,10 +92,12 @@
                                 <p id="day5Humid"></p>
                             </section>
                         </div>
+
+
                     </div>
-                </div>
+                </section>
             </div>
-        
+
 
         </section>
 
